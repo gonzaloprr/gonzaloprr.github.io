@@ -1,4 +1,4 @@
-  document.ready(function() {
+$(document).ready(function() {
 
   $(".ir-arriba").click(function(){
     $("body, html").animate({
@@ -8,7 +8,7 @@
 
   });
 
-  window.scroll(function(){
+  $(window).scroll(function(){
     if ($(this).scrollTop() > 0  ) {
         $(".ir-arriba").slideDown(1000);
     } else {
