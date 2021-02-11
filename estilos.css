@@ -1,0 +1,158 @@
+
+/* Definimos el color de fondo de la pagina y la fuente de toda la pagina */
+html{background-color: white;}
+body{background-color: white; font-family: 'Montserrat', sans-serif;}
+
+/* Crear estilo BOXED en pantallas superiores a 1200px  */
+@media (min-width: 1200px) {body {margin: 0px 80px;}}
+
+/* Estilo Header  Logo */
+.logo {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+/* Estilo Header Menu */
+#dmenu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(0,0,0,.07);
+}
+
+#menu {
+ display: inline-block;
+ padding: 0;
+ }
+
+#menu li {
+ display: contents;
+ margin: 0px 35px;
+ }
+
+ #menu li a {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  text-transform: uppercase;
+  }
+
+  a {
+  color: black;
+  }
+
+  a:hover {
+  color: #8ac53f;
+  }
+
+
+/* Reducir el tamñao de la fuete del menu segun tamaño pantalla */
+  @media (max-width: 500px) {#menu li a {font-size: 15px;}}
+  @media (max-width: 402px) {#menu li a {font-size: 10px;}}
+
+/* Primer bloque h2 */
+ .titulo1 {
+  color: #8ac53f;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;}
+
+/*Reducir fuente del titulo segun tamaño de pantalla */
+  @media (max-width: 495px) { .titulo1 {font-size: 33px;}}
+  @media (max-width: 360px) { .titulo1 {font-size: 27px;}}
+
+/* Estilo Section*/
+  .section  {display:flex; width: 100%;margin-bottom: 60px;}
+  .section2 {display:flex; width: 100%;}
+  .section3 {justify-content: center;
+    display: flex;
+    width: 100%;}
+  .marcas {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;}
+  .marca1 { width: 33.33%;}
+  .marca2 { width: 33.33%;}
+  .marca3 { width: 33.33%;}
+  .bloque{ display:flex; width: 100%;justify-content: center;}
+  .bloque2{ width: 50%;justify-content: center;}
+  .bloquetext {width: 50%; text-align: justify;}
+  .bloqueimg {width:50%;}
+  .bloquetext2 {width: 50%; text-align: center;}
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    float:right;}
+  .img-fluid2 {
+    max-width:100%;
+    height:auto;
+    float:left;}
+  .texto1{margin: 0px 10px;font-size:20px;}
+  .texto2{
+    width: 50%;
+    text-align: center;
+    float: right;
+    margin-right: 100px;}
+  .separador{
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+    display: flex;}
+  .separador2{
+    width: 100%;
+    justify-content: center;
+    display: flex;}
+
+/* Media query para tamaño texto bloque text1 */
+
+@media (max-width: 1040px) {.texto1, .texto2 { font-size: 17px;}}
+@media (max-width: 820px) {.texto1,.texto2 { font-size: 12px;}}
+@media (max-width: 632px) {.texto1,.texto2 { font-size: 10px;}}
+@media (max-width: 544px) {.texto1,.texto2 { font-size: 9px;}}
+@media (max-width: 468px) {.texto1,.texto2 { font-size: 6px;}}
+
+/* Media query para logo y foto*/
+
+@media (max-width: 500px) {.video { display: none;}}
+@media (max-width: 500px) {.img-fluid2 { display: none;}}
+@media (min-width: 500px) {.logo1 { display: none;}}
+
+
+/* Bloque video */
+
+.video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+
+}
+
+.iframeresponsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;}
+
+.logo1 {
+  max-width: 100%;
+  height: auto;}
+
+  /* Clase boton ir arriba */
+.ir-arriba {
+  display:none;
+  padding:20px;
+  background:#8ac53f;
+  font-size: 20px;
+  color:#FFF;
+  cursor:pointer;
+  position:fixed;
+  bottom:20px;
+  right: 20px;
+  }
