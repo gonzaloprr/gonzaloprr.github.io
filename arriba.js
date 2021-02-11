@@ -1,4 +1,3 @@
-(
   document.ready(function() {
 
   $(".ir-arriba").click(function(){
